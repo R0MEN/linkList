@@ -16,14 +16,13 @@ async function fetchCredentials() {
         login: decryptPassword(logPass.login),
         pass: decryptPassword(logPass.pass)
     };
-    console.log("Login:", credentials.login); // Вивести значення для перевірки
-    console.log("Password:", credentials.pass);
+
  // Вивести значення для перевірки
 }
 
 fetchCredentials().then(() => {
     // Використовувати змінну credentials поза асинхронною функцією
-    console.log("Credentials outside async function:", credentials.login);
+    
 });
 
 
